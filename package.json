@@ -1,0 +1,31 @@
+{
+  "name": "api-my-issue-tracker",
+  "version": "1.0.0",
+  "description": "Backend API application for issue tracker application",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -e js,env,graphql ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Ahmed Ali Tanany",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.19.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "google-auth-library": "^2.0.2",
+    "graphql": "^0.13.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0"
+  }
+}
