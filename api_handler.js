@@ -48,7 +48,7 @@ function installHandler(app) {
    * connect the endpoint /graphql to be the root of apollo server
    * insert the middleware in the application server Express
    */
-  const enableCORS = process.env.ENABLE_CORS;
+  const enableCORS = (process.env.ENABLE_CORS || 'true') === 'true';
   console.log('CORS Setting:', enableCORS);
   let cors;
   if (enableCORS) {
