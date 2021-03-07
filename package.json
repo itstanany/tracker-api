@@ -1,8 +1,12 @@
 {
-  "name": "api-my-issue-tracker",
+  "name": "api-issue-tracker",
   "version": "1.0.0",
   "description": "Backend API application for issue tracker application",
   "main": "server.js",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "nodemon -e js,env,graphql ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
