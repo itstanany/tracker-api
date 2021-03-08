@@ -149,42 +149,23 @@ Required Environment variables
 
 ```
 
-# server port
-# during deployment and runtime, it is set automatically
-#   and overwrites what is implemented here
-PORT=8000
+# DB URL string
+DB_URL=YOUR-DATABASE-URL
 
-# HMR of Webpack, enable it during development
-ENABLE_HMR=true
+# server listening port
+PORT=DEFAULT 80
 
-# Google OAuth2 Client Credentials ID 
-GOOGLE_CLIENT_ID=-you-Google cLient Id-.apps.googleusercontent.com
+# CORS configuration
+ENABLE_CORS=true
+
+# Javascript Web token secret string
+JWT_SECRET="YOUR-SECRET-STRING"
+
+# UI server for that sends cookies bypassing cors setting
+# UI_SERVER_ORIGIN=""
 
 
-# REGULAR MODE API ENDPOINTS
-# API url for client
-# UI_API_ENDPOINT=http://localhost:3000/graphql
+# parent domain for setting cookies
+COOKIE_DOMAIN=""
 
-# # API URL for ui server, it doesn't affected by CORS policies
-# UI_SERVER_API_ENDPOINT=http://localhost:3000/graphql
-
-# # auth api endpoint
-# UI_AUTH_ENDPOINT=http://localhost:3000/auth
-
-#  REGULAR CONFIGURATION WITH DOMAINS
-UI_API_ENDPOINT=http://api.promernstack.com:3000/graphql
-UI_SERVER_API_ENDPOINT=http://api.promernstack.com:3000/graphql
-UI_AUTH_ENDPOINT=http://api.promernstack.com:3000/auth
-
-# PROXY MODE API ENDPOINTS
-
-# UI_API_ENDPOINT=http://localhost:8000/graphql
-
-# UI_API_ENDPOINT=/graphql
-
-# UI_AUTH_ENDPOINT=/auth
-
-# API_PROXY_TARGET=http://localhost:3000
-
-# UI_SERVER_API_ENDPOINT=http://localhost:3000/graphql
 ```
