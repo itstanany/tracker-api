@@ -130,7 +130,7 @@ routes.post('/signout', (req, res) => {
   /**
    * On sign out, clear user sign in info cookie
    */
-  res.clearCookie('jwt');
+  res.clearCookie('jwt', { domain: process.env.COOKIE_DOMAIN });
   res.json({ status: 'ok' });
 })
 
