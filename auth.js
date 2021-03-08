@@ -129,6 +129,7 @@ routes.post('/signin', async (req, res) => {
 routes.post('/signout', (req, res) => {
   /**
    * On sign out, clear user sign in info cookie
+   * "domain" field must be specified in clearCookie method
    */
   res.clearCookie('jwt', { domain: process.env.COOKIE_DOMAIN });
   res.json({ status: 'ok' });
