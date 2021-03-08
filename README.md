@@ -5,7 +5,7 @@
 http://ui.issue-tracker-ahmedalima.tk/issues
 
 This repository contains the Back-End application.
-UI application is <a href="https://github.com/ahmedalima/tracker-ui" target="_blank" rel="noreferrer"> HERE </a>
+UI application is <a href="https://github.com/ahmedalima/tracker-ui" target="blank" rel="noreferrer"> HERE </a>
 
 Live Demo:&nbsp; 
 <a href="http://ui.issue-tracker-ahmedalima.tk/issues" target="blank" rel="noreferrer" >
